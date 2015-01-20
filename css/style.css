@@ -1,0 +1,220 @@
+body {
+    margin: 4em 0;
+}
+
+header, footer {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+h2, p, ul, span {
+    font-family: 'Open Sans', sans-serif;  
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 110%;
+    display: inline-block;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+span {
+    font-style: italic;
+}
+
+hr.faded {
+    clear: both; 
+    float: none; 
+    height: 1px;
+    margin: 1.4em 0;
+    width: 100%; 
+    border: none; 
+    background: #ddd;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      right bottom,
+      color-stop(0, rgb(255,255,255)),
+      color-stop(0.1, rgb(221,221,221)),
+      color-stop(0.9, rgb(221,221,221)),
+      color-stop(1, rgb(255,255,255))
+  );
+    background-image: -moz-linear-gradient(
+      left center,
+      rgb(255,255,255) 0%,
+      rgb(221,221,221) 10%,
+      rgb(221,221,221) 90%,
+      rgb(255,255,255) 100%
+  );
+}
+
+#wrapper {
+    padding: 2em;
+    margin: 0 auto 1.5em;
+    width: 70%;
+    background: #FFFFFF;
+}
+
+.wrapper-shadow {     
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; 
+     position:relative; 
+}
+
+.wrapper-shadow:before, .wrapper-shadow:after {
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+       -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+            box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-border-radius:100px / 10px;
+         border-radius:100px / 10px;
+	content:"";
+    position:absolute; 
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    z-index:-1;
+} 
+
+.wrapper-shadow:after {
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+section {
+    clear: both;
+    overflow: hidden;
+    margin: 1em auto;
+}
+
+.col { float: left; }
+
+.block { padding: 0.1em 0; }
+
+.block > h2 { margin-top: 1em; }
+
+.block > ul { 
+    line-height: 1.5em;
+}
+
+.block > span:before {
+    content:'\00B7';
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------- HEADER --------------------------------------
+---------------------------------------------------------------------------------*/
+
+ul.share-menu {
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    right: 13%;
+    top: 5%;
+    list-style: none;
+    margin-bottom: 0.3em;
+}
+
+ul.share-menu > li {
+    border: 1px solid #000;
+    float: left;
+    margin: 0 0.1em;
+}
+
+ul.share-menu > li > a {
+    color: #000000;
+    padding: 0 0.5em;
+}
+
+ul.share-menu > li:hover{
+    background: #000000;
+}
+
+ul.share-menu > li:hover a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+/*--------------------------------------------------------------------------------
+----------------------------------- PROFILE --------------------------------------
+---------------------------------------------------------------------------------*/
+
+h1.name {
+    font-size: 270%;
+}
+
+h2.job-position {
+    color: #545454;
+    font-size: 215%;
+    margin-top: 0.1em;
+    text-transform: uppercase;
+}
+
+.profile .left-col {
+    text-align: left;
+    width: 49%;
+}
+
+.profile .right-col {
+    font-size: 80%;
+    padding-top: 1em;
+    text-align: right;
+    width: 50%;
+}
+
+ul.social-media > li {
+    background: #000000;
+    display: inline-block;
+    margin-top: 0.2em;
+    -moz-border-radius: 0.5em;
+         border-radius: 0.5em;
+}
+
+.kc-linkedin, .kc-github { display: none; }
+/*--------------------------------------------------------------------------------
+----------------------------------- EDUCATION & WORK --------------------------------------
+---------------------------------------------------------------------------------*/
+
+p.school-major, p.company-name { 
+    font-weight: 700;
+    font-style: italic;
+}
+
+p.company-name { 
+    font-size: 110%;
+    color: #545454;
+}
+
+/*--------------------------------------------------------------------------------
+----------------------------------- FOOTER --------------------------------------
+---------------------------------------------------------------------------------*/
+
+p.footer > img { width: 4.5%; vertical-align: middle; }

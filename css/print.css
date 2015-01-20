@@ -1,0 +1,125 @@
+h1, h2, ul, p {
+    margin: 0;
+}
+    
+header {
+    display: none;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+    
+a {
+    color: #000000;
+    text-decoration: none;
+}
+/*--
+a[href^=http]:after {
+      content:" <" attr(href) "> ";
+} --*/
+
+h1 {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+
+h2, p, ul, span {
+    font-family: 'Open Sans', sans-serif;  
+}
+
+h2 {
+    font-weight: 700;
+    display: inline-block;
+    font-size: 11pt;
+}
+
+p, ul {
+    font-size: 10pt;
+}
+
+span {
+    font-style: italic;
+    font-size: 9pt;
+}
+
+hr.faded {
+    display: none;
+}
+
+#wrapper {
+    padding: 1pt;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+section {
+    clear: both;
+    overflow: hidden;
+    margin: 7pt auto;
+}
+    
+.col { float: left; }
+
+.block > h2 { margin-top: 5pt; }
+
+.block > ul { 
+    line-height: 16pt;
+}
+    
+
+/*--------------------------------------------------------------------------------
+----------------------------------- PROFILE --------------------------------------
+---------------------------------------------------------------------------------*/
+
+h1.name {
+    font-size: 20pt;
+    border: none;
+}
+
+h2.job-position {
+    color: #545454;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+
+.profile .left-col {
+    text-align: left;
+    width: 46%;
+}
+
+.profile .right-col {
+    text-align: right;
+    width: 53%;
+}
+    
+.col > p {
+    font-size: 7pt;
+}
+
+ul.social-media {
+    display: none;
+}
+    
+/*--------------------------------------------------------------------------------
+----------------------------------- EDUCATION & WORK --------------------------------------
+---------------------------------------------------------------------------------*/
+
+p.school-major, p.company-name { 
+    font-weight: 700;
+    font-style: italic;
+    text-indent: 5pt;
+}
+    
+p.school-detail { text-indent: 5pt; }
+    
+p.company-name { font-size: 12pt;}
+
+/*--------------------------------------------------------------------------------
+----------------------------------- FOOTER --------------------------------------
+---------------------------------------------------------------------------------*/
+
+p.footer > img { width: 4%; vertical-align: middle; }
