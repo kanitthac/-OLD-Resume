@@ -7,8 +7,7 @@ header {
 }
 
 footer {
-    margin: 0 auto;
-    text-align: center;
+    display: none;
 }
     
 a {
@@ -118,8 +117,3 @@ p.school-detail { text-indent: 5pt; }
     
 p.company-name { font-size: 12pt;}
 
-/*--------------------------------------------------------------------------------
------------------------------------ FOOTER --------------------------------------
----------------------------------------------------------------------------------*/
-
-p.footer > img { width: 4%; vertical-align: middle; }
