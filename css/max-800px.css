@@ -1,47 +1,22 @@
-@media only screen
-and (max-width : 1024px) {
-    
-.right-col > p {
-    font-size: 77%;
+@media only screen and (max-width : 1024px) {
+    .right-col > p { font-size: 77%; }
+    h2.job-position { font-size: 145%; }
 }
 
-h2.job-position {
-    font-size: 145%;
-}
-    
-}
-
-@media only screen
-and (max-width : 800px) {
-
-h2 { font-size: 100%; }
-
-p, span, ul { font-size: 90%; }
-    
-.col { float: none; }
-    
-.profile .left-col,
-.profile .right-col {
-    width: 100%;
-    text-align: center;
-}
-    
-.block > span:before {
-    content:'';
-}
-    
-.block span {
-    display: block;
-}
-    
+@media only screen and (max-width : 800px) {
+    h2 { font-size: 100%; }
+    p, span, ul { font-size: 90%; }
+    .col { float: none; }
+    .block > span:before { content:''; }
+    .block > span { display: block; }
+    .profile .left-col,
+    .profile .right-col {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-@media only screen
-and (max-width : 480px) {
-    
-h1.name {
-    font-size: 240%;
-}
-    
+@media only screen and (max-width : 480px) {
+    h1.name { font-size: 240%; }
 }
 

@@ -1,0 +1,18 @@
+#wrapper { border: 5px solid #000000; }
+
+.col { float: none; }
+
+.profile {
+    text-align: left;
+}
+
+ul.social-media {
+	position: absolute;
+	top: 2%;
+	right: 3.5%;
+}
+
+ul.social-media > li {
+    float: left;
+	border: 2px solid #FFFFFF;
+}

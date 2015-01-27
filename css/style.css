@@ -30,7 +30,6 @@ h2, p, ul, span {
 h2 {
     font-weight: 700;
     font-size: 110%;
-    display: inline-block;
 }
 
 p {
@@ -39,6 +38,9 @@ p {
 
 span {
     font-style: italic;
+    font-size: 90%;
+    display: block;
+    color: #909090;
 }
 
 hr.faded {
@@ -48,7 +50,7 @@ hr.faded {
     margin: 1.4em 0;
     width: 100%; 
     border: none; 
-    background: #ddd;
+    background: #DDDDDD;
     background-image: -webkit-gradient(
       linear,
       left bottom,
@@ -99,11 +101,6 @@ hr.faded {
 .wrapper-shadow:after {
 	right:10px; 
     left:auto;
-    -webkit-transform:skew(8deg) rotate(3deg); 
-       -moz-transform:skew(8deg) rotate(3deg);     
-        -ms-transform:skew(8deg) rotate(3deg);     
-         -o-transform:skew(8deg) rotate(3deg); 
-            transform:skew(8deg) rotate(3deg);
 }
 
 section {
@@ -114,17 +111,11 @@ section {
 
 .col { float: left; }
 
-.block { padding: 0.1em 0; }
+.block { margin-top: 1em; }
 
-.block > h2 { margin-top: 1em; }
+.block > h2, .block >p { padding-left: 1em; }
 
-.block > ul { 
-    line-height: 1.5em;
-}
-
-.block > span:before {
-    content:'\00B7';
-}
+.block > ul { line-height: 1.5em; }
 
 /*--------------------------------------------------------------------------------
 ----------------------------------- HEADER --------------------------------------
@@ -132,7 +123,6 @@ section {
 
 ul.share-menu {
     font-family: 'Lobster', cursive;
-    display: inline-block;
     overflow: hidden;
     position: absolute;
     right: 13%;
@@ -142,7 +132,7 @@ ul.share-menu {
 }
 
 ul.share-menu > li {
-    border: 1px solid #000;
+    border: 1px solid #000000;
     float: left;
     margin: 0 0.1em;
 }
@@ -161,8 +151,7 @@ ul.share-menu > li:hover a {
     text-decoration: none;
 }
 
-
-
+span#email { display: inline; }
 /*--------------------------------------------------------------------------------
 ----------------------------------- PROFILE --------------------------------------
 ---------------------------------------------------------------------------------*/
@@ -173,6 +162,7 @@ h1.name {
 
 h2.job-position {
     color: #545454;
+    display: block;
     font-size: 215%;
     margin-top: 0.1em;
     text-transform: uppercase;
@@ -185,7 +175,6 @@ h2.job-position {
 
 .profile .right-col {
     font-size: 80%;
-    padding-top: 1em;
     text-align: right;
     width: 50%;
 }
@@ -199,6 +188,7 @@ ul.social-media > li {
 }
 
 .kc-linkedin, .kc-github { display: none; }
+
 /*--------------------------------------------------------------------------------
 ----------------------------------- EDUCATION & WORK --------------------------------------
 ---------------------------------------------------------------------------------*/
@@ -206,15 +196,19 @@ ul.social-media > li {
 p.school-major, p.company-name { 
     font-weight: 700;
     font-style: italic;
+    color: #545454;
 }
 
 p.company-name { 
     font-size: 110%;
-    color: #545454;
 }
 
 /*--------------------------------------------------------------------------------
 ----------------------------------- FOOTER --------------------------------------
 ---------------------------------------------------------------------------------*/
+p.footer { text-align: center; }
 
-p.footer > img { width: 4.5%; vertical-align: middle; }
+p.footer > img { 
+    width: 4.5%; 
+    vertical-align: middle; 
+}

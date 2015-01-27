@@ -23,7 +23,7 @@ h1 {
     font-family: 'Arial Narrow', sans-serif;
     font-size: 14pt;
     text-transform: uppercase;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000000;
 }
 
 h2, p, ul, span {
@@ -32,18 +32,21 @@ h2, p, ul, span {
 
 h2 {
     font-weight: 700;
-    display: inline-block;
+    display: block;
     font-size: 11pt;
 }
 
 p, ul {
-    font-size: 10pt;
+    font-size: 8pt;
 }
 
 span {
     font-style: italic;
     font-size: 9pt;
+    display: block;
 }
+
+span#email { display: inline; }
 
 hr.faded {
     display: none;
@@ -58,16 +61,16 @@ hr.faded {
 section {
     clear: both;
     overflow: hidden;
-    margin: 7pt auto;
+    margin: 5pt auto;
 }
     
 .col { float: left; }
 
-.block > h2 { margin-top: 5pt; }
+.block { margin-top: 5pt; }
 
-.block > ul { 
-    line-height: 16pt;
-}
+.block > h2, .block >p { padding-left: 10pt; }
+
+.block > ul { line-height: 14pt; }
     
 
 /*--------------------------------------------------------------------------------
@@ -75,13 +78,13 @@ section {
 ---------------------------------------------------------------------------------*/
 
 h1.name {
-    font-size: 20pt;
+    font-size: 18pt;
     border: none;
 }
 
 h2.job-position {
     color: #545454;
-    font-size: 18pt;
+    font-size: 16pt;
     text-transform: uppercase;
 }
 
@@ -95,8 +98,8 @@ h2.job-position {
     width: 53%;
 }
     
-.col > p {
-    font-size: 7pt;
+.right-col > p {
+    font-size: 6pt;
 }
 
 ul.social-media {
@@ -107,13 +110,10 @@ ul.social-media {
 ----------------------------------- EDUCATION & WORK --------------------------------------
 ---------------------------------------------------------------------------------*/
 
-p.school-major, p.company-name { 
+h2.school-name, p.school-major, p.company-name { 
     font-weight: 700;
     font-style: italic;
-    text-indent: 5pt;
 }
-    
-p.school-detail { text-indent: 5pt; }
     
 p.company-name { font-size: 12pt;}
 
