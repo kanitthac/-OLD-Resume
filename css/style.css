@@ -199,9 +199,9 @@ p.school-major, p.company-name {
     color: #545454;
 }
 
-p.company-name { 
-    font-size: 110%;
-}
+p.company-name { font-size: 110%; }
+
+span.company-url { display: inline; }
 
 /*--------------------------------------------------------------------------------
 ----------------------------------- FOOTER --------------------------------------

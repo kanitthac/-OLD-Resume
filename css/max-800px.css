@@ -7,12 +7,13 @@
     h2 { font-size: 100%; }
     p, span, ul { font-size: 90%; }
     .col { float: none; }
-    .block > span:before { content:''; }
+    ul.social-media { padding: 0;}
     .block > span { display: block; }
     .profile .left-col,
     .profile .right-col {
         width: 100%;
         text-align: center;
+    
     }
 }
 

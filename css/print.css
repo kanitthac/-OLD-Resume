@@ -117,3 +117,5 @@ h2.school-name, p.school-major, p.company-name {
     
 p.company-name { font-size: 12pt;}
 
+span.company-url { display: inline; }
+
