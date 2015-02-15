@@ -87,7 +87,7 @@ hr.faded {
     -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
        -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
             box-shadow:0 0 20px rgba(0,0,0,0.8);
-    -moz-border-radius:100px / 10px;
+    -moz-border-radius:100px / 10px; /* horizontal radius / vertical radius */
          border-radius:100px / 10px;
 	content:"";
     position:absolute; 
@@ -183,6 +183,7 @@ ul.social-media > li {
     background: #000000;
     display: inline-block;
     margin-top: 0.2em;
+    -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
          border-radius: 0.5em;
 }
